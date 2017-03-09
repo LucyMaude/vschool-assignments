@@ -1,0 +1,16 @@
+table, th, td {
+    border: 5px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+h1 {
+    font-family: 'Diplomata SC', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.stars {
+    padding: 20px;
+}

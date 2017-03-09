@@ -1,0 +1,53 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(SuperMario256.ttf)
+}
+.topper {
+    height: 100px;
+    background-color: #ffda09;
+    font-family: myFirstFont;
+}
+
+.imaginer {
+    height: 300px;
+    background-color: #eb1f22;
+}
+
+.first-row h1 {
+    font-family: myFirstFont;
+    color: #eb1f22;
+    font-size: 50px;
+    padding: inherit;
+    text-align: left;
+}
+.texter h1{
+    font-family: myFirstFont;
+}
+.texter {
+    height: 200px;
+    background-color: white;
+    color: #eb1f22;
+}
+
+.texter p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.bottomer {
+    height: 60px;
+    background-color: #ffda09;
+}
+
+.normal-guy {
+    min-width: 100%;
+}
+
+.tiny-guy img{
+/*
+    min-height: 60px;
+    max-height: 60px;
+*/
+}
+
+

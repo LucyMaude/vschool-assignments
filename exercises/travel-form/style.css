@@ -1,0 +1,28 @@
+
+h1 {
+    text-align: center;   
+}
+
+
+.only-form {
+    border: 3px solid black;
+    width: 50%;
+    text-align: center;
+}
+
+.first-row {
+    display: inline-block;
+    width: 50%;
+}
+
+#top-image {
+    resize: both;
+    width: 25%;
+}
+.lower-images {
+    text-align: center;
+    display: inline-block;
+    resize: both;
+    height: 400px;
+    padding: 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CALCULATE DIS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <h1>Enjoy using this simple calculator!</h1>
+    <div class="container">
+        <input id="addingOne" type="number" class="col-md-2 col-md-offset-2">
+        <input id="addingTwo" type="number" class="col-md-2">
+        <input type="submit" onclick="addNumber()" value="Click to add numbers" class="col-md-5">
+    </div>
+    <div class="container">
+        <input id="subtractingOne" type="number" class="col-md-2 col-md-offset-2">
+        <input id="subtractingTwo" type="number" class="col-md-2">
+        <input type="submit" onclick="subtractNumber()" value="Click to subtract the second number from the first number" class="col-md-5">
+    </div>
+    <div class="container">
+        <input id="multiplyingOne" type="number" class="col-md-2 col-md-offset-2">
+        <input id="multiplyingTwo" type="number" class="col-md-2">
+        <input type="submit" onclick="multiplyNumber()" value="Click to multiply these numbers" class="col-md-5">
+    </div>
+    <p id="textSum"></p>
+    <p id="textLess"></p>
+    <p id="textTimes"></p>
+    <footer>
+        <span class="col-md-2 glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+        <span class="col-md-2 glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+        <span class="col-md-2 glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+        <span class="col-md-2 glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+        <span class="col-md-2 glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+        <span class="col-md-2 glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

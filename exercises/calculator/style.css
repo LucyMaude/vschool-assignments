@@ -1,0 +1,25 @@
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    height: inherit;
+    border: 5px solid salmon;
+}
+
+input {
+    border: 3px solid salmon;
+    padding: 0px;
+}
+
+p {
+    text-align: center;
+}
+
+.col-md-5 {
+    background-color: #66FFBA;
+}
+
+span {
+    text-align: center;
+    color: darkblue;
+}

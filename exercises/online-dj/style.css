@@ -1,0 +1,46 @@
+.transparent {
+        background-color: white;
+    width: 500px;
+    height: 500px;
+}
+.black-box {
+    background-color: black;
+    width: 500px;
+    height: 500px;
+}
+
+
+.blue-box {
+    background-color: darkblue;
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+}
+
+.red-box {
+    background-color: indianred;
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+}
+
+.orange-box {
+    background-color: darkorange;
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+}
+
+.yellow-box {
+    background-color: yellow;
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+}
+
+.green-box {
+    background-color: palegreen;
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+}

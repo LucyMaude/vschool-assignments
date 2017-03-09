@@ -1,0 +1,26 @@
+body {
+    font-family: 'Poiret One', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+.chunky-monkey {
+    display: inline-block;
+    width: 30%;
+    text-align: justify;
+    vertical-align: text-top;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#floater {
+    width: 30%;
+}
+
+#no-end {
+    display: inline-block;
+    width: 100%;
+    text-justify: distribute;
+}

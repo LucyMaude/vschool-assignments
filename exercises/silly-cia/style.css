@@ -1,0 +1,30 @@
+h1 {
+    color: darkgreen;
+    text-align: center;
+    font-family: georgia;
+}
+
+h2 {
+    text-align: center;
+    font-family: georgia;
+}
+
+p {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.maybe {
+    text-transform: uppercase;
+}
+
+img {
+    float: left;
+    padding: 25px;
+}

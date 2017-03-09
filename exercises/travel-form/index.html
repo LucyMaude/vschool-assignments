@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div clas="row">
+        <h1>Adventurous Adventuring Adventurers</h1>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <form class="row first-row only-form" id="formFlight">
+                <div class="col-3">
+                    Adventurer's Name:
+                    <input name="name" type="text">
+                </div>
+                <div class="col-3">
+                    Adventurer's Age:
+                    <input name="age" type="number" max=110 min=0>
+                </div>
+                <div class="col-3">
+                    Gender
+                    <br>
+                    <input name="gender" type="radio" value="Male"> Male
+                    <br>
+                    <input id="gender" type="radio" value="Female"> Female
+                    <br>
+                    <input id="gender" type="radio" value="Other"> Other
+                    <br>
+                </div>
+                <div class="col-3">
+                    <select name="location" id="location">
+                        <option value="Copenahagen">Copenhagen</option>
+                        <option value="Dublin">Dublin</option>
+                        <option value="Edinburgh">Edinburgh</option>
+                        <option value="London">London</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <h4> Do you have any dietary restrictions?</h4>
+                </div>
+                <div class="col-3">
+                    Vegan
+                    <input id="vegan" type="checkbox" name="diet" value="Vegan">
+                </div>
+                <div class="col-3">
+                    Gluten-Free
+                    <input id="glutenFree" type="checkbox" name="diet" value="Gluten Free">
+                </div>
+                <div class="col-3">
+                    Meat + Chocolate + Wine Only
+                    <input id="chocolate" type="checkbox" name="diet" value="Lucy Diet">
+                </div>
+                <div class="col-3">
+                    None
+                    <input id="none" type="checkbox" name="diet" value="No Diet">
+                </div>
+
+                <div class="col-3">
+                    <button type="button" id="submitButton">Submit Form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 lower-images">
+            <img src="copenhagen.jpg" class="lower-images">
+            <img src="dublin.jpg" class="lower-images">
+            <img src="london.jpg" class="lower-images">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

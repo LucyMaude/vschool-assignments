@@ -1,0 +1,46 @@
+nav {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+    color: #02D9FF;
+    text-decoration: none;
+}
+
+h1 {
+    color: #02D9FF;
+    font-size: 40px;
+    font-family: 'Abril Fatface';
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+    font-family: 'Abril Fatface';
+    text-align: center;
+}
+
+.gallery {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    width: 33%;
+    max-height: 460px;
+}
+p {
+    font-family: 'Glass Antiqua', cursive;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a {
+    color: #02D9FF;
+    font-size: 20px;
+    font-family: 'Abril Fatface';
+    text-decoration: none;
+}

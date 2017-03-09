@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+:root {
+    --first-bg-color: #F5C6D6;
+    --second-bg-color: #EE2E84;
+    --third-bg-color: #85CFD8;
+    --fourth-bg-color: #8DC63F;
+    --fifth-bg-color: #E76E34;
+}
+
+.togetherTop {
+    height: 200px;
+    width: 100%;
+    background-color: var(--first-bg-color);
+    display: inline-block;
+    border: 10px solid #fff;
+}
+
+.togetherTwo {
+    height: 200px;
+    width: 25%;
+    background-color: var(--second-bg-color);
+    display: inline-block;
+    border: 10px solid #fff;
+}
+
+.togetherThree {
+    height: 200px;
+    width: 50%;
+    background-color: var(--third-bg-color);
+    display: inline-block;
+    border: 10px solid #fff;
+}
+
+.apartOne {
+    height: 200px;
+    width: 75%;
+    background-color: var(--fourth-bg-color);
+    display: inline-block;
+    border: 10px solid #fff;
+}
+
+.apartTwo {
+    height: 200px;
+    width: 25%;
+    background-color: var(--fifth-bg-color);
+    display: inline-block;
+    border: 10px solid #fff;
+}
+/*
+
+@media (max-width: 768px) {
+    .togetherTop {
+        height: 200px;
+        width: 100%;
+        background-color: var(--first-bg-color);
+        display: inline-block;
+        border: 10px solid #fff;
+    }
+    .togetherTwo {
+        height: 200px;
+        width: 100%;
+        background-color: var(--second-bg-color);
+        display: inline-block;
+        border: 10px solid #fff;
+    }
+    .togetherThree {
+        height: 200px;
+        width: 100%;
+        background-color: var(--third-bg-color);
+        display: inline-block;
+        border: 10px solid #fff;
+    }
+    .apartOne {
+        height: 200px;
+        width: 100%;
+        background-color: var(--fourth-bg-color);
+        display: inline-block;
+        border: 10px solid #fff;
+    }
+    .apartTwo {
+        height: 200px;
+        width: 100%;
+        background-color: var(--fifth-bg-color);
+        display: inline-block;
+        border: 10px solid #fff;
+    }
+}
+*/
+
+
+@media (max-width: 768px){
+    .wombination {
+        width: 100%;
+    }
+}
