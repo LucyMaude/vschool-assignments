@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mario Pest Control</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="none">
+    <header>
+        <h1 class="text-center"> Mario Pest Control</h1>
+        <button type="button" id="clickMe">Night Night!</button>
+    </header>
+    <main>
+        <div>
+            <h2 class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4 text-center">Goombas</div>
+              <div class="col-sm-12 col-md-4 col-lg-4 text-center">Bob-ombs</div>
+              <div class="col-sm-12 col-md-4 col-lg-4 text-center">Cheep-cheeps</div>
+          </h2></div>
+        <div class="row">
+            <img class="col-sm-12 col-md-4 col-lg-4" src="http://vignette4.wikia.nocookie.net/nintendo/images/2/2a/New_Super_Mario_Bros_Wii_Goomba.jpeg/revision/latest?cb=20121207200144&path-prefix=en">
+            <img class="col-sm-12 col-md-4 col-lg-4" src="http://vignette3.wikia.nocookie.net/fantendo/images/6/63/BobombNSMBU.png/revision/latest?cb=20121106225051">
+            <img class="col-sm-12 col-md-4 col-lg-4" src="http://1.bp.blogspot.com/_tG4cOxUC0UU/TQoQTU3PznI/AAAAAAAAAs4/Octkj9HZRKw/s320/600px-cheep_cheep.jpg">
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center"> Cost: 5 coins</div>
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center"> Cost: 7 coins</div>
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center"> Cost: 11 coins</div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center">Goombas Caught:
+                <input type="number" id="goombasCaught" value="">
+                <input type="submit" id="addGoombas" value="Add Number of Goombas Caught">
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center">Bob-ombs Caught:
+                <input type="number" id="bobsCaught">
+                <input type="submit" id="addBobs" value="Add Number of Bob-ombs Caught">
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center">Cheep-cheeps Caught:
+                <input type="number" id="cheepsCaught">
+                <input type="submit" id="addCheeps" value="Add Number of Cheep-cheeps caught">
+            </div>
+            <div class="row text-center">
+                <p class="col-sm-12 col-md-4 col-lg-4 text-center" id="addGoombaText"></p>
+                <p class="col-sm-12 col-md-4 col-lg-4 text-center" id="addBobText"></p>
+                <p class="col-sm-12 col-md-4 col-lg-4 text-center" id="addCheepText"></p>
+            </div>
+        </div>
+        <div class="row text-left">
+            <div class="col-md-2 h3"></div>
+            <input type="submit" id="calculateTotal" value="Calculate Total Cost">
+        </div>
+        <p class="col-sm-5 col-md-5 col-lg-5 text-center" id="addTotalText"></p>
+        <audio id="chaChing">
+            <source src="smw_coin.wav" type="audio/wav">
+        </audio>
+    </main>
+
+    <footer class="navbar-fixed-bottom" class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4">mario@nintendo.nin</div>
+        <div class="col-sm-12 col-md-4 col-lg-4">www.fake.nintendo.website.co.uk</div>
+        <div class="col-sm-12 col-md-4 col-lg-3"> 100 Fake Address Place, Unknown Country</div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

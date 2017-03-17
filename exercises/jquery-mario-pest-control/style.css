@@ -1,0 +1,29 @@
+@font-face {
+    font-family: ItsAMario;
+    src: url(Pixel%20Emulator.otf);
+}
+
+body {
+    font-family: ItsAMario;
+    height: 100%;
+}
+
+h1 {
+    background-color: #0CC62F;
+}
+.h3 {
+    display: inline;
+    font-size= 2e;
+    height: auto;
+    color: red;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+}
+
+.newBodyLovesMe {
+    background-color: black;
+    filter: invert(1) hue-rotate(180deg);
+}

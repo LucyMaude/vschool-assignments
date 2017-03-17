@@ -1,0 +1,17 @@
+header {
+    background-image: url(https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/14141630_10155140402504256_5558697424264083515_n.jpg?oh=3062920f6726f6deafd11ce8613e7f47&oe=593061E5);
+    background-size: cover;
+    text-align: center;
+    color: black;
+    height: 350px;
+}
+
+img {
+    max-width: 50%;
+    max-height:50%;
+}
+footer {
+    background-color: #b0d7fd;
+    text-align: center;
+}
+

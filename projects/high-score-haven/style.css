@@ -1,0 +1,47 @@
+header {
+    background-color: #de1c85;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-family: 'Clicker Script', cursive;
+    font-size: 2em;
+}
+
+form {
+    text-align: center;
+    border: 5px solid black;
+    margin-left: 25%;
+    margin-bottom: 25%;
+    width: 50%;
+    background-color: #ffe9f5;
+}
+
+table {
+    text-align: center;
+    border: 5px solid black;
+    background-color: #ffe9f5;
+    width: 75%;
+    margin: 12.5%;
+}
+
+tr:nth-child(odd) {  
+    background-color: #de1c85;
+    color: white;
+}
+
+caption {
+    font-family: 'Clicker Script', cursive;
+    color: #de1c85;
+    font-size: 2em;
+}
+
+footer {
+    color: white;
+    background-color: #de1c85;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

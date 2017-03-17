@@ -1,0 +1,62 @@
+{
+    "appetizers": [
+        {
+            "name": "Fried Mac n' Cheese",
+            "ingredients": ["Macaroni", "Cheese", "Skim Milk", "Paprika"],
+            "description": "if you can't figure out what this is then you shouldn't eat it"
+    },
+        {
+            "name": "Caprese Salad",
+            "ingredients": ["ingredient 1", "ingredient 2", "ingredient 3", "ingredient 4"],
+            "description": "if you can't figure out what this is then you shouldn't eat it"
+    }
+],
+    "cold sandwiches": [
+        {
+            "name": "BALT",
+            "ingredients": ["ingredient 1", "ingredient 2", "ingredient 3", "ingredient 4"],
+            "description": "if you can't figure out what this is then you shouldn't eat it"
+    },
+        {
+            "name": "Tuna",
+            "ingredients": ["ingredient 1", "ingredient 2", "ingredient 3", "ingredient 4"],
+            "description": "if you can't figure out what this is then you shouldn't eat it"
+    }
+],
+    "hot sandwiches": [
+        {
+            "name": "Chicken Parm",
+            "ingredients": ["ingredient 1", "ingredient 2", "ingredient 3", "ingredient 4"],
+            "description": "if you can't figure out what this is then you shouldn't eat it"
+        },
+        {
+            "name": "Meatball Sub",
+            "ingredients": ["ingredient 1", "ingredient 2", "ingredient 3", "ingredient 4"],
+            "description": "if you can't figure out what this is then you shouldn't eat it"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "Ice Cream",
+            "ingredients": ["ingredient 1", "ingredient 2", "ingredient 3", "ingredient 4"],
+            "description": "if you can't figure out what this is then you shouldn't eat it"
+        },
+        {
+            "name": "Tiramisu",
+            "ingredients": ["ingredient 1", "ingredient 2", "ingredient 3", "ingredient 4"],
+            "description": "if you can't figure out what this is then you shouldn't eat it"
+        }
+    ],
+"drinks": [
+    {
+        "name": "Lemonade",
+        "ingredients": ["ingredient 1", "ingredient 2", "ingredient 3", "ingredient 4"],
+        "description": "if you can't figure out what this is then you shouldn't eat it"
+        },
+    {
+        "name": "Sweet Tea",
+        "ingredients": ["ingredient 1", "ingredient 2", "ingredient 3", "ingredient 4"],
+        "description": "if you can't figure out what this is then you shouldn't eat it"
+        }
+    ]
+}
