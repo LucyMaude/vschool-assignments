@@ -22,6 +22,7 @@ function double(Number) {
 }
 double(7);
 
+//extra practice 1
 
 var teachers = 10
 var parents = .5
@@ -45,6 +46,8 @@ function ptaCookies(children) {
 
 ptaCookies(100);
 
+
+//extra practice 2
 function favColor(color) {
     if (color === "blue") {
         return "That's my fave too!!!! OMG BESTIES!";

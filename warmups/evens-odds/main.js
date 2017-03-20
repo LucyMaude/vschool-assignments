@@ -5,16 +5,16 @@ var odds = []; // Do not edit this line.
 //code here
 var nums = [13, 19, 27, 35, 2];
 
-function oddsAndEvens(nums) {
-    for (var i = 0; i < nums.length; i++) {
-        if (nums[i] % 2 === 0) {
-            evens.push(nums[i]);
+function oddsAndEvens() {
+    for (var i = 0; i < 101; i++) {
+        if (i % 2 === 0) {
+            evens.push(i);
         } else {
-            odds.push(nums[i]);
+            odds.push(i);
         }
     }
 }
 
-oddsAndEvens(nums);
+oddsAndEvens();
 console.log(evens);
 console.log(odds);
