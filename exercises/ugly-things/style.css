@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    padding: 60px;
+    background-color: goldenrod;
+    color: aliceblue;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 6em;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+form {
+    padding: 60px;
+}
+
+.form-control {
+    border: 2px solid black;
+}
+
+.image-title {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 3em;
+}
+
+.least-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+}
+
+.lesser-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.this-image {
+    border: 5px solid goldenrod;
+    border-radius: 25px;
+}

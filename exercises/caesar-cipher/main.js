@@ -25,4 +25,4 @@ function encoder(stringToEncode, howFarRemoved){
     return newString;
 }
 
-console.log(encoder("v school is awesome!", 11));
+console.log(encoder("v school is awesome!", 1));

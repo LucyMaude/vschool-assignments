@@ -38,13 +38,19 @@ $(document).ready(function () {
             pickAFinger();
         } else {
             phrase = "nothing";
+        } 
+        if ($("#typeCheckTwo").is(":checked")){
+             scoreExtra = " minutes";
+        } else if ($("typeCheck").is(":checked")){
+             scoreExtra = " points";
         }
+        var scoreExtra;
         var name = $("#typeName").val();
         var game = $("#typeGame").val();
         var date = $("#typeDate").val();
-        var score = $("#typeScore").val();;
+        var score = $("#typeScore").val();
         console.log(phrase);
-        var newRow = "<tr><td>" + name + "</td><td>" + game + "</td><td>" + date + "</td><td>" + score + "</td><td>" + phrase + "</td></tr>";
+        var newRow = "<tr><td>" + name + "</td><td>" + game + "</td><td>" + date + "</td><td>" + score + scoreExtra + "</td><td>" + phrase + "</td></tr>";
         $(".tableClass").append(newRow);
     })
 })

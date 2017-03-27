@@ -1,0 +1,14 @@
+/*To color the panel, use contextual classes (.panel-default, .panel-primary, .panel-success, .panel-info, .panel-warning, or .panel-danger):*/
+
+
+.col-xs-4 {
+    padding: 5px;
+}
+
+.col-xs-9 {
+    padding: 5px;
+}
+
+.container {
+    margin: 5px;
+}

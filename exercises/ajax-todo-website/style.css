@@ -1,0 +1,17 @@
+.top {
+    height: 100px;
+    background-color: burlywood;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.form-group {
+    height: 100px;
+    text-align: center;
+    margin: 5px;
+    
+}
+
+.panel-heading {
+    background-color: burlywood;
+}

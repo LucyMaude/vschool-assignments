@@ -1,0 +1,2 @@
+Colossal Adventure (Console RPG)Project:
+    For this project I created a console RPG. The user walks through a strange land and enemies are generated at random. The player can choose to fight or run. If choosing to run, there is a 50% chance they will escape unharmed. If choosing to fight, the player can pick a weapon from their inventory. Each time the player defeats an enemy, they gain health points and inventory. If the user dies or gains a certain number of items in their inventory the game ends. The goal was to demonstrate proficiency in javaScript. 

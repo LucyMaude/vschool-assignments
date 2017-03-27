@@ -10,7 +10,7 @@ body {
 h1 {
     background-color: #0CC62F;
 }
-h3 {
+.h3 {
     display: inline;
     font-size= 2e;
     height: auto;
@@ -20,4 +20,9 @@ h3 {
 footer {
     background-color: blue;
     color: white;
+    margin: 20px;
+}
+
+.bottom-trouble {
+    margin: 20px;
 }

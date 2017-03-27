@@ -1,0 +1,40 @@
+.awesome {
+    text-decoration: line-through;
+}
+
+
+h1 {
+    text-align: center;
+    padding: 60px;
+    background-color: goldenrod;
+    color: aliceblue;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 6em;
+}
+
+form {
+    padding: 60px;
+}
+
+.form-control {
+    border: 2px solid black;
+}
+
+.image-title {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 3em;
+}
+
+.least-text {
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.this-image {
+    border: 5px solid goldenrod;
+    border-radius: 25px;
+}
+.btn {
+    margin: 10px;
+}

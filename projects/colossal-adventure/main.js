@@ -132,7 +132,7 @@ function continuesWalking() {
         firstEncounter();
     } else if (keepWalking === "s") {
         prematureDeath();
-    } else if (wander === "p") {
+    } else if (keepWalking === "p") {
         console.log(playerName);
         console.log(userHealth);
         console.log(inventoryNames);

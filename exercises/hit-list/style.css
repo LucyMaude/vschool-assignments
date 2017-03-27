@@ -1,0 +1,41 @@
+.head {
+    background-color: #a20606;
+    height: 200px;
+    font-family: 'Jim Nightshade', cursive;
+    color: black;
+}
+.cersei {
+    height: 200px;
+    border: 5px solid black;
+}
+
+.roar {
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+.photo {
+    height: 250px;
+    width: 250px;
+    border: 5px solid #fce02d;
+}
+
+.panel-heading {
+    color: #fce02d;
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 2em;
+}
+
+.foot {
+    background-color: #a20606;
+    height: 150px;
+    font-family: 'Jim Nightshade', cursive;
+    text-align: center;
+
+}
+
+.inner-foot {
+    font-size: 3em;
+    padding: 10px;
+    color: #fce02d;
+}

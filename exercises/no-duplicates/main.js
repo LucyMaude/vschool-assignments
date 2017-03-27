@@ -11,3 +11,8 @@ function isDuple(val) {
         }
     }
 }
+
+isDuple(testString);
+console.log(testString);
+console.log(original);
+console.log(double);

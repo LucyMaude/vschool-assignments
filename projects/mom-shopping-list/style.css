@@ -4,6 +4,7 @@ header {
     text-align: center;
     color: black;
     height: 350px;
+    font-family: 'Baloo Bhaina', cursive;
 }
 
 img {
@@ -13,5 +14,6 @@ img {
 footer {
     background-color: #b0d7fd;
     text-align: center;
+    font-family: 'Baloo Bhaina', cursive;
 }
 

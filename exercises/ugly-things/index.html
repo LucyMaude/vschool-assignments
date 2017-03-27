@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="uglyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>U.G.L.Y</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="uglyCtrl">
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1>Ugly Things {{test}} </h1>
+            </header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 form-group">
+            <form>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-1"><input class="form-control" type="text" placeholder="Title" ng-model="newSubmission.title"></div>
+                    <div class="col-xs-2"><input class="form-control" type="url" placeholder="Img URL" ng-model="newSubmission.url"></div>
+                    <div class="col-xs-2"><input class="form-control" type="text" placeholder="Description" ng-model="newSubmission.description"></div>
+                    <div class="col-xs-2"><input class="form-control" type="text" placeholder="Submission By" ng-model="newSubmission.name"></div>
+                    <div class="col-xs-2"><button class="form-control" ng-click="submitUgly(newSubmission)">Submit Image</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row" ng-repeat="submission in applyUgly">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-2 col-xs-offset-3 image-title">{{submission.title}} :</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-xs-offset-5 least-text">{{submission.description}}</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3 this-image"><img ng-src="{{submission.url}}"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-xs-offset-5 lesser-text"> Submitted By: {{submission.name}} </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

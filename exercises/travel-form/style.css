@@ -6,23 +6,24 @@ h1 {
 
 .only-form {
     border: 3px solid black;
-    width: 50%;
     text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .first-row {
     display: inline-block;
-    width: 50%;
+    width: 45%;
 }
 
 #top-image {
     resize: both;
-    width: 25%;
+    width: 20%;
 }
 .lower-images {
     text-align: center;
     display: inline-block;
     resize: both;
-    height: 400px;
+    width: 30%;
     padding: 5px;
 }
