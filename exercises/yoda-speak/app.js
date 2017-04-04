@@ -1,22 +1,13 @@
 var app = angular.module("yodaApp", []);
 
-app.controller("yodaCtrl", ["$scope", "$http", function ($scope, $http) {
+app.controller("yodaCtrl", ["$scope", "yodaService", function ($scope, yodaService) {
 
-    var toGet = {
-        Method: "GET",
-        headers: {
-            'X-Mashape-Key': 'ydoXoQrHFfmsh6N8IE3C6r1Osz8ep1MAkh2jsnZZX99BCTLHAm'
-        }
-    };
-    
-    $scope.workPlease = function(info) {
 
-        var top = "https://yoda.p.mashape.com/yoda?sentence=" + $scope.sentence;
+    $scope.workPlease = function (sentence) {
+        yodaService.newSentence(sentence).then(function (newObject) {
+            return $scope.sayMe = newObject;
+        });
 
-        $http.get(top, toGet).then(function(response) {
-            console.log(response.data);
-            $scope.sayMe = response.data;
-        })
     };
 
 }]);

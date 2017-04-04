@@ -1,28 +1,37 @@
-var app = angular.module("todoApp", []);
+var app = angular.module("ngApp", []);
 
-app.controller("todoCtrl", ["$scope", "$http", function ($scope, $http) {
+app.controller("ngCtrl", ["$scope", "ngService", function ($scope, ngService) {
 
-    $http.get("http://api.vschool.io/lucymaude/todo")
-        .then(function (results) {
-            $scope.newArray = results.data;
-            console.log(results.data);
+    ngService.retrieve().then(function (newObject) {
+        $scope.newArray = newObject;
+    })
+
+    $scope.addList = function (input) {
+        ngService.addTo(input).then(function (newObject) {
+            console.log(newObject);
+            $scope.newArray.push(newObject);
         })
-    
-    $scope.addList = function (inputs) {
-
-        $scope.newSubmission = {};
-
-        $http.post("http://api.vschool.io/lucymaude/todo", inputs).then(function (results) {
-            $scope.newArray.push(results.data);
-        });
-    }
-
-
+    };
 
     $scope.deleteMe = function (index, item) {
         $scope.newArray.splice(index, 1);
-        $http.delete("http://api.vschool.io/lucymaude/todo/" + item).then(function () {
-            console.log("goodbye")
-        });
+        ngService.delete(index, item).then(function () {
+            console.log("A success");
+        })
+    };
+
+    $scope.editMe = function (item) {
+
+        ngService.editing(item).then(function () {
+            console.log("this worked too");
+        })
+        //        $scope.newArray = ngService.editing(item);
+        //    };
+
+        //        original put function
+        //        function(item){
+        //        console.log("something");
+        //        console.log(item);
+        //        $http.put("http://api.vschool.io/lucymaude/todo/" + item._id, item)
     }
 }]);

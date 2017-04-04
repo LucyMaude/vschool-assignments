@@ -5,9 +5,9 @@ $.get("http://api.vschool.io/lucymaude/todo/", function (response) {
         $("#insertHere").append(`<div class="col-xs-12 panel-group">
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 panel panel-default">
-                <div class="panel-heading"><input class="checkMe" type="checkbox"><button class="btn btn-warning" type="button">Remove</button>
-                    <span class="image-title now-done">
-                ${response[i].title}</span>
+                <div class="panel-heading"><input class="checkMe" type="checkbox"><button class="btn btn-info" id="remove" type="button">Remove</button>
+                    <p class="image-title now-done">
+                ${response[i].title}</p>
                 </div>
                 <div class="col-xs-4 panel-body">
                     <div><img class="photo image-responsive this-image" src="${response[i].imgUrl}"></div>
@@ -18,6 +18,13 @@ $.get("http://api.vschool.io/lucymaude/todo/", function (response) {
         </div>
     </div>`);
     }
+    $(".checkMe").click(function () {
+        if ($(".checkMe").is(":checked")) {
+            console.log("this is checking to check if checked")
+            $(".now-done").css("text-decoration", "line-through");
+        }
+    });
+
 });
 
 $("#runGet").click(function () {
@@ -38,9 +45,9 @@ $("#runGet").click(function () {
     $("#insertHere").append(`<div class="col-xs-12 panel-group">
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 panel panel-default">
-                <div class="panel-heading"><input  class="checkMe" type="checkbox">
-                    <span class="image-title now-done">
-                ${inputObj.title}</span>
+                <div class="panel-heading"><input  class="checkMe" type="checkbox"><button class="btn btn-info" type="button">Remove</button>
+                    <p class="image-title now-done">
+                ${inputObj.title}</p>
                 </div>
                 <div class="panel-body">
                     <div><img class="photo image-responsive this-image" src="${inputObj.imgUrl}"></div>
@@ -50,11 +57,11 @@ $("#runGet").click(function () {
             </div>
         </div>
     </div>`)
+    $(".checkMe").click(function () {
+        if ($(".checkMe").is(":checked")) {
+            console.log("this is checking to check if checked")
+            $("#now-done").css("text-decoration", "line-through");
+        }
+    });
+
 });
-
-
-//$(".checkMe").clicked(function () {
-//            if ($(".checkMe").is(":checked") {
-//                    $("#now-done").css("text-decoration", "line-through");
-//                })
-//        };

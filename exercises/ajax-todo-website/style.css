@@ -1,8 +1,9 @@
 .top {
     height: 100px;
-    background-color: burlywood;
+    background-color: dodgerblue;
     text-align: center;
     font-family: 'Abril Fatface', cursive;
+    color: white;
 }
 
 .form-group {

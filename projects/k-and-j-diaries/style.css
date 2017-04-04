@@ -1,34 +1,302 @@
-li {
-    display: inline;
+/*Nav Bar Total*/
+
+.nav-icon {
+    margin: 10px;
 }
 
-.img-responsive {
-    -webkit-animation: fadein 2.5s;
-    width: "6000";
-    height: "4000";
-    display: inline-block;
-}
-
-
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.search-query {
+    font-family: "avenir", sans-serif;
+    margin: 10px;
 }
 
 .email-bar {
-    height: 80px;
-    padding: 30px;
-    background-color:  #f3c3ac;
+    font-family: "avenir", sans-serif;
+    padding: 16px;
+    background-color: #fee5da;
 }
 
-.follow {
+.email-span{
+    display: inline;
+}
+
+.envelope-one {
+    border: none;
+    position: relative;
+    right: 30px;
+    background-color:white;
+    font-size: 11px;
+    color: darkgray;
+}
+
+.envelope-one :hover {
+    color: #fee5da;
+}
+.email {
+    text-transform: uppercase;
+    border: none;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    font-family: "avenir", sans-serif;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: "avenir", sans-serif;
+    text-transform: uppercase;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #fde5d9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown :hover .dropbtn {
+    background-color: #fde5d9;
+}
+
+.search-bar {
+    display: inline;
+}
+.fa-search {
+    position: relative;
+    right: 30px;
+    color: darkgray;
+}
+
+
+/*Blog Post*/
+
+.blog-bar {
+    margin-top: 40px;
     text-align: center;
-    height: 90px;
-    border-bottom: 2px solid grey;
-    border-left: 2px solid grey;
-    border-right:2px solid grey;
+    font-family: "Bebas Neue Regular", sans-serif;
+    text-transform: uppercase;
 }
 
-.following {
+.date {
+    margin: 10px;
+    font-family: "avenir", sans-serif;
+    color: darkgrey;
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    background-color: white;
+    width: 20%;
+    left: 37%
+}
+
+#hr-date {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border: 1px solid lightgray;
+}
+
+.title {
+    font-size: 40px;
+    margin: 10px;
+    color: black;
+}
+.title a {
+    color: black;
+    text-decoration: none;
+}
+.title :hover {
+    color: #fee5da;
+}
+
+.category {
+    font-family: "avenir", sans-serif;
+    color: darkgrey;
+    text-transform: none;
+    margin: 10px;
+}
+
+.description {
+    margin: 12px;
+    font-family: "avenir", sans-serif;
+    text-transform: none;
+    text-align: justify;
+}
+
+.description>p {
+    margin-top: 20px;
+}
+
+.more {
+    text-transform: none;
+    color: darkgray;
+}
+
+.more :hover {
+    color: white;
+    background-color: darkgray;
+}
+
+.btn {
+    font-family: "Bebas Neue Regular", sans-serif;
+    background-color: white;
+    border: 2px solid darkgray;
+    border-radius: 0px;
+}
+
+.links {
+    display: inline;
+}
+
+.blog-icons {
+    font-size: 25px;
+}
+
+.blog-icons>i {
+    margin: 16px;
+    color: #f3c3ac;
+}
+
+.comments {
+    font-family: "avenir", sans-serif;
+    text-transform: none;
+}
+
+.related {
+    text-transform: none;
+    font-family: "Bebas Neue Light";
+    font-size: 30px;
+    margin: 5px;
+}
+#related-title {
+    position: relative;
+    top: 25px;
+    left: 35%;
+    text-align: center;
+    width: 25%;
+    background-color: white;
+}
+#related-border{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid lightgray;
+}
+.related-image {
     padding: 5px;
+    width: 20%
+}
+
+/*Side-Bar*/
+
+@media (max-width: 800px){
+    .hide-me {
+        display: none;
+    }
+}
+.follow {
+    border: 1px solid lightgray;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.heading-follow{
+    text-align: center;
+    font-family: "Bebas Neue Light";
+    font-size: 22px;
+    width: 55%;
+    position: relative;
+    top: 25px;
+    left: 25%;
+    background-color: white;
+}
+
+.follow a {
+    color: black;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.follow a:hover {
+    color: #fee5d9;
+}
+.logo {
+    padding: 10px;
+}
+
+.second p{
+    font-family: "avenir", sans-serif;
+}
+.second input {
+    font-family: "avenir", sans-serif;
+    text-transform: uppercase;
+}
+#fifth {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 50px;
+    
+}
+#full-width {
+    width:100%;
+    padding: 0px;
+}
+#fifth button {
+    height: 45px;
+}
+#archives {
+    font-family: "avenir", sans-serif;
+    text-transform: none;
+    font-size: 14px;
+    text-align: left;
+    color: black;
+}
+
+/* Footer Content*/
+#footer {
+    font-family: "avenir", sans-serif;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+.footer-content {
+    background-color: black;
+    color: white;
+    padding:10px;
+}
+#copyright {
+    text-align: right;
 }

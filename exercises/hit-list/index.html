@@ -14,28 +14,24 @@
     <div class="row head">
         <div class="col-xs-2 col-xs-offset-1">
             <img class="cersei" src="http://static3.comicvine.com/uploads/original/14/148983/3275759-7760386458-Cerse.JPG"></div>
-                <h1><div class="col-xs-8 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-6 roar">Hear Me Roar</div></h1>
-            </div>
+        <h1>
+            <div class="col-xs-8 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-6 roar">Hear Me Roar</div>
+        </h1>
+    </div>
     <div class="row">
         <div class="col-xs-8 col-xs-offset-1 col-sm-6 col-md-4 col-lg-4 panel-group" ng-repeat="item in hitList">
-<!--
-            <div class="row">
-               <div class="col-xs-12 col-md-4 col-md-offset-1 panel">
--->
-                <div class="panel-heading">{{item.name}}</div>
-                <div class="panel-body"><img class="photo image-responsive" ng-src="{{item.image}}"></div>
-<!--
-            </div>
+            <div class="panel-heading">{{item.name}}</div>
+            <div class="panel-body"><img class="photo image-responsive" ng-src="{{item.image}}"></div>
         </div>
--->
     </div>
     <div class="row">
         <div class="col-xs-12 foot">
-            <h1 class= "inner-foot">A Lannister Always Pays His Debts...</h1>
+            <h1 class="inner-foot">A Lannister Always Pays His Debts...</h1>
         </div>
     </div>
-
+    
     <script src="app.js"></script>
+    <script src="services.js"></script>
 </body>
 
 </html>

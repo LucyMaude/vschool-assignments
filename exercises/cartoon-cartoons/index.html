@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cartoonApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+</head>
+
+<body class="container-fluid" ng-controller="cartoonCtrl">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Cartoon Cartoons!</h1>
+        </div>
+    </div>
+    <div class="row chemicalX">
+        <div class="col-xs-10 col-lg-4 col-lg-offset-4 form-group">
+            <form class="form">
+                <input type="url" placeholder="Enter URL" id="blossom" class="form-control" ng-model="add.url">
+                <input type="text" placeholder="Name Your Post" id="butterCup" class="form-control" ng-model="add.title">
+                <input type="text" placeholder="Add Description" id="bubbles" class="form-control" ng-model="add.description">
+                <button id="mojoJojo" class="form-control" ng-click="addCartoon(add)">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div ng-repeat="something in cartoonArray track by $index">
+        <div class="row" >
+            <div class="col-xs-10 col-lg-4 col-lg-offset-4" ng-class-odd="'plum-background'" ng-class-even="'green-background'">
+                <h2>{{something.title}}</h2>
+                <img class="img-responsive" ng-src={{something.url}}>
+                <p>{{something.description}}</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="main.js"></script>
+    <script src="service.js"></script>
+
+</body>
+
+</html>
