@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="personalApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Find an API and use it</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+</head>
+
+<body class="container">
+    <div class="row topper">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-3">
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/#/home">Home</a></button></div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/#/quiz">Quiz</a></button></div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/#/characters">Characters</a></button></div>
+            <div class="dropdown">
+                <button class="dropbtn" id="house-drop">Houses</button>
+                <div class="dropdown-content">
+                    <a href="/#/baratheon">Baratheon</a>
+                    <a href="/#/greyjoy">Greyjoy</a>
+                    <a href="/#/lannister">Lannister</a>
+                    <a href="/#/stark">Stark</a>
+                    <a href="/#/targaryen">Targaryen</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="snow"></div>
+    <ng-view></ng-view>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="home/home.js"></script>
+<script src="quiz/quiz.js"></script>
+<script src="quiz/quiz-service.js"></script>
+<script src="characters/characters.js"></script>
+<script src="characters/characters-services.js"></script>
+<script src="greyjoy/greyjoy.js"></script>
+<script src="greyjoy/grey-service.js"></script>
+<script src="lannister/lannister.js"></script>
+<script src="lannister/lan-service.js"></script>
+<script src="stark/stark.js"></script>
+<script src="targaryen/targ.js"></script>
+<script src="targaryen/targ-service.js"></script>
+<script src="stark/stark-service-example.js"></script>
+<script src="baratheon/baratheon.js"></script>
+<script src="baratheon/baratheon-service.js"></script>
+
+</html>

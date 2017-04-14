@@ -1,0 +1,36 @@
+h1 {
+    color: #396e64;
+    margin-left: 50px;
+    
+}
+.image-drop {
+    background-image: url(http://cdn.playbuzz.com/cdn/2df83625-a01e-4e75-96eb-cade3b407587/e7b2eb4b-c564-49d6-ac6c-51367bee2333.jpg);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+}
+
+.input-group {
+    margin: 50px;
+    border: 3px solid #396e64;
+    padding: 5px;
+}
+
+.input-group h2 {
+    text-align: center;
+}
+.form-control {
+    margin: 10px;
+    text-align: center;
+}
+
+.displayed {
+    padding: 20px;
+    background-color: #396e64;
+    color: white;
+}
+
+#check-me-out {
+    margin: 5px;
+}
+

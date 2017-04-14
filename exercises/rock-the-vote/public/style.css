@@ -1,0 +1,73 @@
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: white;
+    color: red;
+    padding: 20px;
+}
+
+.head {
+    margin-bottom: 50px;
+}
+
+body {
+    background-image: url("http://www.bnute.com/artgiveaway/printables/digitalpapersbybnute/navystarsbyBNuteproductions.jpg");
+    background-size: cover;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+form {
+    margin: 80px;
+}
+
+form p {
+    /*    text-align: center;*/
+    color: red;
+    font-size: 30px;
+}
+
+.issue-pannels {
+    font-size: 20px;
+    color: white;
+}
+
+#title-of {
+    position: relative;
+    left: 20px;
+}
+
+#description {
+    font-size: 16px;
+}
+
+.red {
+/*    border: 2px dashed white;*/
+    background-color: red;
+    background-size: cover;
+    color: white;
+}
+
+.white {
+/*    border: 2px dashed red;*/
+    background-color: white;
+    background-size: cover;
+    color: red;
+}
+
+.glyphicon-bullhorn {
+    position: relative;
+    left: 60%;
+}
+
+
+.pick-red {
+    color: red;
+}
+
+.comment-user {
+    font-size: 30px;
+}
+
+.comment-content {
+    font-size: 12px;
+}

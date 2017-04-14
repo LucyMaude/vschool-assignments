@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-xs-12 col-lg-12 front">
+        <h1 class="credits character-title">Characters loyal to the Starks</h1>
+        <h3 >Click on a characters' name to see some information about them</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12" ng-repeat="item in filtered">
+    <div class="row listed"><a href={{item.url}}><h1>{{item.name}}</h1></a></div>
+    </div>
+</div>
+

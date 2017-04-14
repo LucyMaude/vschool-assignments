@@ -1,0 +1,277 @@
+body { background-color:#333; }
+
+/*navigation*/
+
+.topper {
+    background-color: black;
+    z-index: 2;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: "game of thrones";
+    text-transform: uppercase;
+    margin: 10px;
+    text-align: center;
+    z-index: 2;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 5px;
+    z-index: 2;
+}
+
+.dropdown a {
+    color: white;
+}
+
+.dropdown a:hover {
+    color: maroon;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: "game of thrones";
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: maroon;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown :hover .dropbtn {
+    background-color: #fde5d9;
+}
+
+
+/*heading*/
+
+.credits {
+    /*    font-family: "avenir", sans-serif;*/
+    font-family: "Game of Thrones";
+    font-size: 60px;
+    color: maroon;
+    text-align: center;
+}
+
+
+/*house stark*/
+
+.stark-title {
+    text-align: center;
+    color: #799184;
+    font-family: 'game of thrones';
+    font-size: 40px;
+}
+
+.stark-img {
+    float: left;
+    margin: 10px;
+}
+
+.stark-words {
+    color: #799184;
+}
+
+.stark-para {
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    color: white;
+}
+
+
+/*house lannister*/
+
+.lan-title {
+    text-align: center;
+    color: #820f0c;
+    font-family: 'game of thrones';
+    font-size: 40px;
+}
+
+.lan-words {
+    color: #820f0c
+}
+
+
+/*house targaryen*/
+
+.targ-title {
+    text-align: center;
+    color: #e01400;
+    font-family: 'game of thrones';
+    font-size: 40px;
+}
+
+.targ-words {
+    color: #e01400;
+}
+
+
+/*house greyjoy*/
+
+.grey-title {
+    text-align: center;
+    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: goldenrod;
+    font-family: 'game of thrones';
+    font-size: 40px;
+}
+
+.grey-words {
+    color: black;
+}
+
+
+/*house baratheon */
+
+.baratheon-title {
+    text-align: center;
+    color: gold;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: 'game of thrones';
+    font-size: 40px;
+}
+
+.baratheon-words {
+    color: gold;
+}
+
+
+/*characters*/
+
+.character-title {
+    text-align: center;
+    color: maroon;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: 'game of thrones';
+    font-size: 40px;
+}
+
+.div h1 {
+    z-index: 2;
+}
+
+.front h3{
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+.listed a {
+    color: maroon;
+    font-family: 'game of thrones';
+    font-size: 10px;
+    margin: 2px;
+    z-index: 2;
+}
+
+.listed a:hover {
+    text-decoration: none;
+    color: black;
+    z-index: 2;
+}
+
+
+/*quiz*/
+
+.quintro {
+    font-size: 30px;
+    margin: 50px;
+}
+
+.each-quiz {
+    margin: 100px;
+    text-align: center;
+    border: 2px solid maroon;
+    background-color: black;
+    color: white;
+}
+
+#sub-titulo {
+    width: 100%;
+    padding: 0px;
+}
+
+.btn {
+   background-color: maroon; 
+}
+
+.within {
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.within h4 {
+    font-family: "game of thrones";
+    font-size: 20px;
+}
+
+/*animasnow*/
+
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	

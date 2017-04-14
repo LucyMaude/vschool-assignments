@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bountyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bounty Hunter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container-fluid" ng-controller="bountyCtrl">
+    <div class="row image-drop">
+        <h1>Just call me Domino Harvey</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row input-group"> <h2>Submit New Target</h2>
+                <div class="col-xs-6 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2"><input class="form-control" type="text" placeholder="First Name" ng-model="hunted.firstName"></div>
+                <div class="col-xs-6 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1"><input class="form-control" type="text" placeholder="Last Name" ng-model="hunted.lastName"></div>
+                <div class="col-xs-12 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1"><input class="form-control" type="number" placeholder="Bounty Amount" ng-model="hunted.bountyAmount"></div>
+                <div class="col-xs-12 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2"><span><input class="form-control" type="checkbox" ng-model="hunted.living">Alive?</span></div>
+                <div class="col-xs-12 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1"><select class="form-control" ng-model="hunted.type">
+        <option>Jedi</option>
+        <option>Sith</option>
+        <option>Droid's Mother</option>
+    </select></div>
+                <div class="col-xs-6 col-xs-offset-3 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1"><button class="btn-danger form-control" ng-click="post(hunted)">Submit Entry</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row" ng-repeat="item in displayMe track by $index">
+                <div class="displayed col-xs-12 col-md-4 col-md-offset-1" ng-hide="editing">
+                    <div ><h3>{{item.firstName}} {{item.lastName}}</h3></div>
+                    <div>{{item.type}}</div>
+                    <div>{{item.bountyAmount}}</div>
+                    <div>Task Complete?<input id="check-me-out" type="checkbox" ng-checked="{{item.living}}"></div>
+                    <div><button class=" form-control btn-warning" type="submit" ng-click="editing = !editing">Edit</button> <button class=" form-control btn-danger" ng-click="delete(item._id, $index)">Remove</button></div>
+                </div>
+                <div class="displayed col-xs-12 col-md-4 col-md-offset-2" ng-show="editing">
+                    <div ><input class="form-control" type="text" placeholder={{item.firstName}} ng-model="newHunted.firstName"></div>
+                    <div ><input class="form-control" type="text" placeholder={{item.lastName}} ng-model="newHunted.lastName"></div>
+                    <div>Still Living?<input class="form-control" type="checkbox" ng-model="newHunted.living"></div>
+                    <div><input class="form-control" type="number" placeholder="{{item.bountyAmount}}" ng-model="newHunted.bountyAmount"></div>
+                    <div><select  class="form-control" placeholder="{{item.type}}" ng-model="newHunted.type">
+        <option>Jedi</option>
+        <option>Sith</option>
+        <option>Droid's Mother</option>
+    </select></div>
+                    <div><button class="form-control btn-warning" ng-click="editMe(newHunted, $index); editing = !editing">Edit Entry</button></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="server.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="services.js"></script>
+
+</body>
+
+</html>

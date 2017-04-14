@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="votingApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+
+<body class="container" ng-controller="votingCtrl">
+    <div class="row">
+        <div class="col-xs-12 col-lg-6 col-lg-offset-3 head">
+            <h1>Rock the Vote!</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+            <form>
+                <p>Send in an issue for the vote!</p>
+                <input placeholder="Issue Title" type="text" ng-model="entry.title">
+                <input placeholder="Description" type="text" ng-model="entry.description">
+                <button class="btn-default" ng-click="entryFunction(entry)">Submit Issue</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div ng-class-even="'red'" ng-class-odd="'white'" class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 issue-pannels" ng-repeat="item in displayArr | orderBy: '-votes' track by $index">
+            <div class="row" id="title-of">{{item.title}}</div>
+            <div class="col-xs-12 col-lg-6" id="description">
+                <div class="row">{{item.description}}</div>
+                <div class="row">Number of Votes: {{item.votes}}</div>
+            </div>
+<div class="col-xs-12 col-lg-6">
+    <input class="pick-red" type="text" placeholder="Comment Here" ng-model="addComment.comment">
+    <input class="pick-red" type="text" placeholder="Add your Usename" ng-model="addComment.username">
+</div>
+            <button class="btn-danger" ng-click="add(item, $index)">UpVote</button> <button class="btn-default" ng-click="subtract(item, $index)">DownVote</button> <button class="btn-primary" ng-click="newComment(item, addComment, $index)">Post Comment</button> <i ng-click="commenting = !commenting" class="glyphicon glyphicon-bullhorn"></i>
+            
+            <div ng-show="commenting" ng-repeat="something in item.comments track by $index"><div class="comment-user">{{something.username}}</div><div class="comment-content">{{something.comment}}</div></div>
+        </div>
+        
+    </div>
+    <script src="/server.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="services.js"></script>
+</body>
+
+</html>

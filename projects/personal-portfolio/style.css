@@ -1,0 +1,106 @@
+/*home*/
+
+
+/*nav-bar*/
+
+.navigation {
+    position: fixed;
+    top: 200px;
+    font-family: 'Berkshire Swash', cursive;
+    color: goldenrod;
+    width: 3%;
+    font-size: 25px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.navigation li {
+    margin-top: 20px;
+}
+
+.navigation a {
+    color: goldenrod;
+}
+
+.navigation a:hover {
+    text-decoration: none;
+    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: lightpink;
+}
+
+
+/*name*/
+
+.name {
+    position: absolute;
+    top: 90px;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: goldenrod;
+}
+
+
+/*images*/
+
+.img-responsive {
+    z-index: 1;
+}
+
+
+.the-headers{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+
+/*about */
+
+.about {
+    height: 725px;
+    background-color: lightpink;
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+
+/*skills*/
+
+.skills {
+    height: 725px;
+    background: linear-gradient (black 50%, white 50%);
+/*    background-size: 100% 20%;*/
+/*    background-repeat: repeat-y;*/
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+
+/*projects*/
+
+.projects {
+    height: 725px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+
+/*edex*/
+
+.e-and-e {
+    height: 725px;
+    background-color: lightblue;
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+
+/*contact*/
+
+.contact {
+    height: 725px;
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+}
