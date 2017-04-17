@@ -7,14 +7,6 @@ app.config(["$routeProvider", function ($routeProvider) {
             templateUrl: "home/home.html",
             controller: "homeCtrl"
         })
-        //    .when("/arryn", {
-        //        templateUrl: "arryn/arryn.html",
-        //        controller: "arrynCtrl"
-        //    })
-        //    .when("/frey", {
-        //        templateUrl: "frey/frey.html",
-        //        controller: "freyCtrl"
-        //    })
         .when("/greyjoy", {
             templateUrl: "greyjoy/greyjoy.html",
             controller: "greyjoyCtrl"

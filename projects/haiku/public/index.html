@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="haikuApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Haiku</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container-fluid" >
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row nav">
+                <a href="/#/learn-more">Learn More</a>
+                <a href="/#/my-page">My Page</a>
+                <a href="/#/search">Explore</a>
+            </div>
+        </div>
+    </div>
+
+
+    <ng-view></ng-view>
+
+</body>
+<script src="/server.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="home/home.js"></script>
+<script src="home/home-service.js"></script>
+<script src="learn-more/learn-more.js"></script>
+<script src="learn-more/learn-more-service.js"></script>
+<script src="search/search.js"></script>
+<script src="search/search-service.js"></script>
+<script src="make/make.js"></script>
+<script src="make/make-service.js"></script>
+<script src="my-page/my-page.js"></script>
+<script src="my-page/my-page-service.js"></script>
+<script src="sign-up/sign-up.js"></script>
+<script src="sign-up/sign-up-service.js"></script>
+<script src="log-in/log-in.js"></script>
+<script src="log-in/log-in-service.js"></script>
+
+</html>

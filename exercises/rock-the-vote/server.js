@@ -1,12 +1,10 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
-var morgan = require("morgan");
 var issueRoute = require("./routes/issue-route");
 var mongoose = require("mongoose");
 
 var path = require("path");
-app.use(morgan("dev"));
 app.use(express.static("public"));
 
 app.use(bodyParser.json()); 
