@@ -27,7 +27,7 @@ app.config(["$routeProvider", function ($routeProvider) {
             controller: "signUpCtrl",
             templateUrl: "sign-up/sign-up.html"
         })
-        .when("/login", {
+        .when("/log-in", {
             controller: "loginCtrl",
             templateUrl: "log-in/log-in.html"
         })
@@ -35,3 +35,4 @@ app.config(["$routeProvider", function ($routeProvider) {
         redirectTo: "/home"
     })
 }]);
+

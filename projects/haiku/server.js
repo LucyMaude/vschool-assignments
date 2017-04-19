@@ -1,18 +1,38 @@
 var express = require("express");
 var app = express();
-
-var userRoute = require("./routes/user-route")
-
 var path = require("path");
-app.use(express.static("public"));
-
+var morgan = require("morgan");  
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/haiku");
-
 var bodyParser = require("body-parser");
-app.use(bodyParser.json());
+var config = require("./config"); 
+var expressJwt = require("express-jwt");
 
-app.listen(8080, function(){
-    console.log("app is listening on 8080")
-})
+var port = process.env.PORT || 8080;
+
+app.use(morgan("dev"));
+app.use(bodyParser.json()); 
+
+app.use(express.static(path.join("public")));
+
+app.use("/haiku", require("./routes/haiku-route"));
+
+mongoose.connect(config.database, function (err) {
+    if (err) throw err;
+    console.log("connected to the DB");
+});
+
+app.use("/auth", require("./routes/authRoutes"));
+
+app.listen(port, function(){
+    console.log(`app is listening on ${port}`)
+});
+
+
+ 
+
+
+
+//app.use("/haiku", expressJwt({secret: config.secret}));
+
+
 
