@@ -2,9 +2,8 @@
 
 <div class="row home-page">
     <div class="col-xs-5 col-xs-offset-3">
-<!--        <div class="row"><a href="/#/sign-up"><button class="btn btn-round top-button">Sign Up</button></a></div>-->
-       <div class="row"><button class="btn btn-round top-button" ng-click="log = !log">Sign Up</button></div>
-            <div ng-show="log" class="row form-group">
+        <div class="row"><button class="btn btn-round top-button" ng-click="log = !log">Sign Up</button></div>
+        <div ng-show="log" class="row form-group">
             <input class="form-control" type="text" placeholder="First Name">
             <input class="form-control" type="text" placeholder="Last Name">
             <input class="form-control" type="email" placeholder="Email Address">
@@ -13,8 +12,7 @@
             <input class="form-control" type="text" placeholder="Confirm Password">
             <button class="form-control btn">Sign Up</button>
         </div>
-<!--        <div><a href="/#/log-in"><button class="btn btn-round" >Log In</button></a></div>-->
-       <div class="row"><button class="btn btn-round" ng-click="log = !log">Log In</button></div>
+        <div class="row"><button class="btn btn-round" ng-click="log = !log">Log In</button></div>
         <div class="row form-group" ng-hide="log">
             <input class="form-control" type="text" placeholder="usename">
             <input class="form-control" type="text" placeholder="password">

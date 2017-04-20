@@ -11,10 +11,10 @@ var port = process.env.PORT || 8080;
 
 app.use(morgan("dev"));
 app.use(bodyParser.json()); 
+app.use("/api", expressJwt({secret: config.secret}));
+app.use(express.static(path.join(__dirname, "public")));
 
-app.use(express.static(path.join("public")));
-
-app.use("/haiku", require("./routes/haiku-route"));
+app.use("/api/haiku", require("./routes/haiku-route"));
 
 mongoose.connect(config.database, function (err) {
     if (err) throw err;
@@ -32,7 +32,7 @@ app.listen(port, function(){
 
 
 
-//app.use("/haiku", expressJwt({secret: config.secret}));
+
 
 
 

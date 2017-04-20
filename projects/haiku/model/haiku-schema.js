@@ -7,7 +7,11 @@ var haikuSchema = new Schema({
     firstLine: String,
     secondLine: String,
     thirdLine: String,
-//    gg
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+        required: true
+    },
     tags: [String]
 });
 

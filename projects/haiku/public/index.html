@@ -16,6 +16,9 @@
                 <a href="/#/learn-more">Learn More</a>
                 <a href="/#/my-page">My Page</a>
                 <a href="/#/search">Explore</a>
+                <a href="/#/signup">Sign Up</a>
+                <a href="/#/login">Log In</a>
+                <a href='/#/logout'>Log Out</a>
             </div>
         </div>
     </div>
@@ -29,21 +32,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
 <script src="app.js"></script>
-<script src="home/home.js"></script>
-<script src="home/home-service.js"></script>
-<script src="learn-more/learn-more.js"></script>
-<script src="learn-more/learn-more-service.js"></script>
-<script src="search/search.js"></script>
-<script src="search/search-service.js"></script>
-<!--
-<script src="make/make.js"></script>
-<script src="make/make-service.js"></script>
--->
-<script src="my-page/my-page.js"></script>
-<script src="my-page/my-page-service.js"></script>
-<script src="sign-up/sign-up.js"></script>
-<script src="sign-up/sign-up-service.js"></script>
-<script src="log-in/log-in.js"></script>
-<script src="log-in/log-in-service.js"></script>
+<script src="components/auth/auth.js"></script>
+<script src="components/home/home.js"></script>
+<script src="components/home/home-service.js"></script>
+<script src="components/learn-more/learn-more.js"></script>
+<script src="components/search/search.js"></script>
+<script src="components/search/search-service.js"></script>
+<script src="components/my-page/my-page.js"></script>
+<script src="components/my-page/my-page-service.js"></script>
+<script src="components/auth/login/login.js"></script>
+<script src="components/auth/logout/logout.js"></script>
+<script src="components/auth/signup/signup.js"></script>
+<script src="components/auth/auth-interceptor.js"></script>
+<script src="components/auth/token-service.js"></script>
+<script src="components/auth/user-service.js"></script>
 
 </html>
