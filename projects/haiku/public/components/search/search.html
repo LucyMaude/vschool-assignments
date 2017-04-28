@@ -5,14 +5,23 @@
                 <button class="btn btn-round form-control explore-btn">Find Random</button>
             </div>
             <div class="col-xs-10 col-sm-3 col-sm-offset-2 col-md-2 col-md-offset-5">
-                <input class="form-control" type="search" placeholder="Search Through Tags">
+                <input class="form-control" type="search" placeholder="Search Through Tags" ng-model="string">
             </div>
             <div class="col-xs-10 col-sm-3 col-md-2">
-                <button class="btn btn-round form-control explore-btn">Search</button>
+                <button class="btn btn-round form-control explore-btn" ng-click="search(string)">Search</button>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-xs-3 col-xs-offset-1 search-all"ng-repeat="haiku in display track by $index">
+                    <div class="row">
+                        <h2>{{haiku.title}}</h2>
+                    </div>
+                    <div class="row">{{haiku.firstLine}}</div>
+                    <div class="row">{{haiku.secondLine}}</div>
+                    <div class="row"> {{haiku.thirdLine}}</div>
+                    <div class="row" ng-repeat="item in haiku.tags"><h5>"{{item}}"</h5></div>
+                </div>
+            </div>
+        </div>
 
 </div>
-
-<!--explore other's haiku, list of 20 haiku taken randomly from db. button so refresh and change to 20 more random haiku-->

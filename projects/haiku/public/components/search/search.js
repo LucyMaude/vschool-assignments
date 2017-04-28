@@ -1,7 +1,21 @@
 var app = angular.module("haikuApp");
 
-app.controller("searchCtrl", ["$scope", "searchService", function($scope, searchService){
+app.controller("searchCtrl", ["$scope", "haikuService", function($scope, haikuService){
     
-    $scope.search = "test for search";
-    $scope.searchService = searchService.search;
+    haikuService.getAll().then(function(response){
+        $scope.display = response;
+    })
+    
+//    $scope.getRandom = function () {
+//        haikuService.random().then(function(response){
+//            $scope.display = response;
+//        });
+//    };
+    
+    $scope.search = function (query) {
+        haikuService.search(query).then(function(response){
+            $scope.display = response;
+        })
+    }
+    
 }])

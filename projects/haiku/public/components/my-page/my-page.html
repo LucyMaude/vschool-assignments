@@ -1,49 +1,48 @@
 <div class="row my-page">
-    <h1 class="my-page-welcome">Welcome Home</h1>
-
-    <div class="col-xs-10 col-md-4 col-lg-4">
+    <div class="col-xs-10 col-md-6 col-lg-5">
+        <h1 class="my-page-welcome">Welcome Home</h1>
+    </div>
+    <div class="col-xs-10 col-md-4 col-md-ofset-1 col-lg-4 col-lg-offset-1">
         <div class="row">
-            <button class="btn btn-round make-button" ng-click="seeing = !seeing">View Past Creations</button>
-        </div>
-        <div class="row">
-            <button class="btn btn-round make-button" ng-click="make = !make">Let's Get Creative</button>
+            <button class="btn btn-round make-button" ng-click="seeing = !seeing; make = !make">View Past Creations</button>
         </div>
     </div>
-    <div ng-show="make" class="col-xs-10 col-md-4 col-md-offset-2 col-lg-4">
-        <form class="form-group" ng-show="make">
-            <input class="form-control" type="text" placeholder="Line 1 (remember 5-7-5!)" ng-model="new.firstLine">
-            <input class="form-control" type="text" placeholder="Line 2" ng-model="new.secondLine">
-            <input class="form-control" type="text" placeholder="Line 3" ng-model="new.thirdLine">
-            <input class="form-control" type="text" placeholder="Now give it a title" ng-model="new.title">
-            <input class="form-control" type="text" placeholder="Add tags if you want" ng-model="new.tags">
-            <button class="form-control" ng-click="createFunction(new)" id="add-haiku">Add!</button>
-        </form>
 
-    </div>
-</div>
-
-
-<div class="row showing-poems" ng-show="seeing">
-    <div class="well col-xs-12 col-lg-4 col-lg-offset-1" ng-repeat="poem in displayHaiku track by $index">
-        <div class="row">
-            <form class="form-group form-middle" ng-show="editing">
-                <input class="form-control" type="text" placeholder="{{poem.firstLine}}" ng-model="adjust.firstLine">
-                <input class="form-control" type="text" placeholder="{{poem.secondLine}}" ng-model="adjust.secondLine">
-                <input class="form-control" type="text" placeholder="{{poem.thirdLine}}" ng-model="adjust.thirdLine">
-                <input class="form-control" type="text" placeholder="{{poem.title}}" ng-model="adjust.title">
-                <input class="form-control" type="text" placeholder="{{poem.tags}}" ng-model="adjust.tags">
-                <button class="form-control edit-button" ng-click="changeFunction(poem, adjust, $index); editing = !editing">Update!</button>
+    <div class="row">
+        <div class="col-xs-10 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
+            <form class="form-group">
+                <input class="form-control" type="text" placeholder="Line 1 (remember 5-7-5!)" ng-model="new.firstLine">
+                <input class="form-control" type="text" placeholder="Line 2" ng-model="new.secondLine">
+                <input class="form-control" type="text" placeholder="Line 3" ng-model="new.thirdLine">
+                <input class="form-control" type="text" placeholder="Now give it a title" ng-model="new.title">
+                <input class="form-control" type="text" placeholder="Add tags if you want" ng-model="new.tags">
+                <button class="form-control" ng-click="createFunction(new); new = {}" id="add-haiku">Add!</button>
             </form>
         </div>
-        <i class="glyphicon glyphicon-trash" ng-click="delete(poem, $index)"></i>
-        <i class="glyphicon glyphicon-pencil" ng-click="editing = !editing"></i>
-        <div ng-hide="editing" >
-        <div class="row">
-            <h2>{{poem.title}}</h2>
-        </div>
-        <div class="row">{{poem.firstLine}}</div>
-        <div class="row">{{poem.secondLine}}</div>
-        <div class="row"> {{poem.thirdLine}}</div>
+
+    </div>
+    <div class="row showing-poems" ng-show="seeing">
+        <div class="well col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1 col-lg-4" ng-repeat="poem in displayHaiku track by $index">
+            <div class="row">
+                <form class="form-group form-middle" ng-show="editing">
+                    <input class="form-control" type="text" placeholder="{{poem.firstLine}}" ng-model="adjust.firstLine">
+                    <input class="form-control" type="text" placeholder="{{poem.secondLine}}" ng-model="adjust.secondLine">
+                    <input class="form-control" type="text" placeholder="{{poem.thirdLine}}" ng-model="adjust.thirdLine">
+                    <input class="form-control" type="text" placeholder="{{poem.title}}" ng-model="adjust.title">
+                    <input class="form-control" type="text" placeholder="{{poem.tags}}" ng-model="adjust.tags">
+                    <button class="form-control edit-button" ng-click="changeFunction(poem, adjust, $index); editing = !editing">Update!</button>
+                </form>
+            </div>
+            <i class="glyphicon glyphicon-trash" ng-click="delete(poem, $index)"></i>
+            <i class="glyphicon glyphicon-pencil" ng-click="editing = !editing"></i>
+            <div ng-hide="editing">
+                <div class="row">
+                    <h2>{{poem.title}}</h2>
+                </div>
+                <div class="row">{{poem.firstLine}}</div>
+                <div class="row">{{poem.secondLine}}</div>
+                <div class="row"> {{poem.thirdLine}}</div>
+            </div>
         </div>
     </div>
 </div>

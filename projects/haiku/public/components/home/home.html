@@ -4,19 +4,17 @@
     <div class="col-xs-5 col-xs-offset-3">
         <div class="row"><button class="btn btn-round top-button" ng-click="log = !log">Sign Up</button></div>
         <div ng-show="log" class="row form-group">
-            <input class="form-control" type="text" placeholder="First Name">
-            <input class="form-control" type="text" placeholder="Last Name">
-            <input class="form-control" type="email" placeholder="Email Address">
-            <input class="form-control" type="text" placeholder="Create Username">
-            <input class="form-control" type="text" placeholder="Create Password">
-            <input class="form-control" type="text" placeholder="Confirm Password">
-            <button class="form-control btn">Sign Up</button>
+            <input class="form-control" type="text" placeholder="Name" ng-model="firstTime.name">
+            <input class="form-control" type="text" placeholder="Create Username" ng-model="firstTime.username">
+            <input class="form-control" type="password" placeholder="Create Password" ng-model="firstTime.password">
+            <input class="form-control" type="password" placeholder="Confirm Password" ng-model="passwordRepeat">
+            <button class="form-control btn" ng-click="signup(firstTime)">Sign Up</button>
         </div>
         <div class="row"><button class="btn btn-round" ng-click="log = !log">Log In</button></div>
         <div class="row form-group" ng-hide="log">
-            <input class="form-control" type="text" placeholder="usename">
-            <input class="form-control" type="text" placeholder="password">
-            <button class="form-control btn">Submit</button>
+            <input class="form-control" type="text" placeholder="usename" ng-model="user.username">
+            <input class="form-control" type="text" placeholder="password" ng-model="user.password">
+            <button class="form-control btn" ng-click="login(user)">Submit</button>
         </div>
     </div>
 

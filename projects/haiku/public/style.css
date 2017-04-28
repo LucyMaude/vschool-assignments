@@ -2,12 +2,12 @@
 
 .nav { 
     background-color: black;
-    height: 40px;
+    height: 60px;
 }
 .nav a {
     position: relative;
     top: 10px;
-    left: 10%;
+    left: 5px;
     margin: 5%;
     padding: 4px;
     border-radius: 24px;
@@ -23,6 +23,22 @@
 .bottom {
     background-color: pink;
     height 100px;
+}
+#logo {
+    font-family: 'Pacifico', cursive;
+    border: 0px;
+    font-size: 22px;
+/*    left: 20%;*/
+}
+#logout {
+/*
+    left: 0px;
+    float: right;
+    margin: 0px;
+    margin-right: 15px;
+    padding: 4px;
+    top: 14px;
+*/
 }
 
 
@@ -65,13 +81,13 @@
     font-family: 'Montserrat', sans-serif;
     color: skyblue;
     font-size: 50px;
-    margin: 100px;
-    text-align: center;
+    margin: 70px;
+    text-align: justify;
 }
 .make-button {
     color: white;
-    margin: 50px;
-    margin-top: 20px;
+/*    margin: 50px;*/
+    margin-bottom: 15px;
 }
 .make-button:hover {
     background-color: skyblue;
@@ -137,12 +153,13 @@
 
 /*learn more page*/
 .learning-class {
-    height: 150vh;
+    height: 170vh;
     background-image: url("images/fuji.jpg");
     background-size: cover;
+    color: skyblue;
 }
 .title-learning {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
     text-align: center;
     height: 10vh;
 }
@@ -150,8 +167,41 @@
     font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     border: 3px solid black;
-    height: 60vh;
+    height: 550px;
 }
+.fuji-well h3 {
+    margin: 5%;
+}
+.fuji-well p {
+    margin: 5%;
+}
+.fuji-well .left-align {
+    text-align: left;
+    color: white;
+}
+.fuji-well .center-align {
+    text-align: center;
+}
+.learn-login {
+    position: relative;
+    top: 10px;
+    margin: 5%;
+    padding: 5px;
+    border-radius: 24px;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid skyblue;
+    text-decoration: none;
+    background-color: black;
+    width: 100px;
+    color: white;
+}
+.learn-login:hover {
+    background-color: skyblue;
+    border-color: black;
+    color: black;
+    text-decoration: none;
+}
+
 /*explore*/
 .explore-class {
     height: 100vh;
@@ -162,3 +212,13 @@
     background-color: #692039;
     color: white;
 }
+.search-all {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    border: 5px solid #692039;
+    border-radius: 25px;
+    padding: 3%;
+    color: skyblue;
+    text-align: center;
+}
+
