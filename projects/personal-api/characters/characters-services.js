@@ -6,19 +6,21 @@ app.service("characterService", ["$http", function ($http) {
 
     this.getArray = function () {
         var character;
-        return $http.get("http://www.anapioficeandfire.com/api/houses/362")
+        return $http.get("http://anapioficeandfire.com/api/houses/362")
             .then(function (response) {
+            console.log(response);
                 character = response.data.swornMembers;
                 return character
             })
             .then(function (character) {
+            console.log(character);
                 var promises = [];
                 for (var i = 0; i < character.length; i++) {
-                    promises.push($http.get(character[i]).then(function (response) {
-                        return response;
-                    }))
+                    promises.push($http.get(character[i]))
                 }
+            console.log(promises);
                 return promises;
+            
             })
     }
 
